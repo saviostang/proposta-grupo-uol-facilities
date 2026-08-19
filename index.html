@@ -87,6 +87,9 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif}
 .pname{font-family:'Montserrat',sans-serif;font-size:18px;font-weight:700;color:#fff;margin-bottom:20px}
 .pprice{font-family:'Montserrat',sans-serif;font-size:40px;font-weight:800;color:#FFBEF5;line-height:1;margin-bottom:4px}
 .pperiod{font-size:13px;color:rgba(255,255,255,0.45);margin-bottom:22px}
+.pmes{font-size:17px;font-weight:800;color:#FFBEF5;margin-left:4px}
+.pimplant{font-size:14px;color:rgba(255,255,255,0.6);margin-bottom:24px}
+.pimplant strong{color:#FFBEF5;font-weight:800}
 .pitems{list-style:none;margin-bottom:20px}
 .pitems li{padding:9px 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:13px;color:rgba(255,255,255,0.7);display:flex;align-items:center;gap:10px}
 .pitems li::before{content:'✓';color:#6660B4;font-weight:700;flex-shrink:0}
@@ -144,7 +147,7 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif}
   <p class="hero-sub">Projeção de retorno para <strong>Grupo UOL — Facilities</strong> · Plano Essencial (1 Assistente de IA)</p>
   <div class="hero-metrics">
     <div class="hm"><div class="hm-val">R$ 109 mil</div><div class="hm-lbl">Volume de compras/mês</div></div>
-    <div class="hm"><div class="hm-val">109%</div><div class="hm-lbl">ROI Ano 1 realista</div></div>
+    <div class="hm"><div class="hm-val">1,1×</div><div class="hm-lbl">Retorno Ano 1 realista</div></div>
     <div class="hm"><div class="hm-val">172 dias</div><div class="hm-lbl">Payback realista</div></div>
     <div class="hm"><div class="hm-val">32</div><div class="hm-lbl">Pedidos de compra/mês</div></div>
   </div>
@@ -266,8 +269,8 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif}
       <div class="rc cons">
         <div class="rc-scenario">Conservador</div>
         <div class="rc-conv">5% de saving</div>
-        <div class="rc-roi">31%</div>
-        <div class="rc-lbl">ROI Ano 1</div>
+        <div class="rc-roi">0,3×</div>
+        <div class="rc-lbl">Retorno Ano 1</div>
         <div class="rc-rows">
           <div class="rc-row"><span class="rc-rl">Economia/mês</span><span class="rc-rv">R$ 5.454</span></div>
           <div class="rc-row"><span class="rc-rl">Economia/ano</span><span class="rc-rv">R$ 65.445</span></div>
@@ -279,8 +282,8 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif}
       <div class="rc real">
         <div class="rc-scenario">Realista</div>
         <div class="rc-conv">8% de saving</div>
-        <div class="rc-roi" style="color:#6660B4">109%</div>
-        <div class="rc-lbl">ROI Ano 1</div>
+        <div class="rc-roi" style="color:#6660B4">1,1×</div>
+        <div class="rc-lbl">Retorno Ano 1</div>
         <div class="rc-rows">
           <div class="rc-row"><span class="rc-rl">Economia/mês</span><span class="rc-rv">R$ 8.726</span></div>
           <div class="rc-row"><span class="rc-rl">Economia/ano</span><span class="rc-rv">R$ 104.712</span></div>
@@ -292,8 +295,8 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif}
       <div class="rc proj">
         <div class="rc-scenario">Projetado</div>
         <div class="rc-conv">12% de saving</div>
-        <div class="rc-roi">214%</div>
-        <div class="rc-lbl">ROI Ano 1</div>
+        <div class="rc-roi">2,1×</div>
+        <div class="rc-lbl">Retorno Ano 1</div>
         <div class="rc-rows">
           <div class="rc-row"><span class="rc-rl">Economia/mês</span><span class="rc-rv">R$ 13.089</span></div>
           <div class="rc-row"><span class="rc-rl">Economia/ano</span><span class="rc-rv">R$ 157.068</span></div>
@@ -303,7 +306,7 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif}
         </div>
       </div>
     </div>
-    <p class="roi-note">* Retorno previsível, não garantido. Saving aplicado sobre o volume de compras de R$ 109.075/mês — gerado por maior competição entre fornecedores e negociação estruturada pela IA. Investimento Ano 1 = R$ 3.500 × 12 meses + R$ 8.000 implantação = R$ 50.000 (Plano Essencial). No Plano Avançado (2 assistentes, R$ 68.000/ano), o retorno segue a mesma lógica, com breakeven a partir de ~5,2% de saving. Ganhos de produtividade do time de compras não contabilizados.</p>
+    <p class="roi-note">* Retorno previsível, não garantido. Saving aplicado sobre o volume de compras de R$ 109.075/mês — gerado por maior competição entre fornecedores e negociação estruturada pela IA. Múltiplo = ganho líquido ÷ investimento total no Plano Essencial (R$ 3.500/mês + R$ 8.000 de implantação). No Plano Avançado (2 assistentes), o retorno segue a mesma lógica, com breakeven a partir de ~5,2% de saving. Ganhos de produtividade do time de compras não contabilizados.</p>
   </div>
 </section>
 
@@ -347,8 +350,8 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif}
     <div class="pc anual">
       <div class="ptag">Recomendado</div>
       <div class="pname">Plano Essencial</div>
-      <div class="pprice">R$ 3.500</div>
-      <div class="pperiod">por mês · pacote anual</div>
+      <div class="pprice">R$ 3.500<span class="pmes">/mês</span></div>
+      <div class="pimplant">+ <strong>R$ 8.000</strong> de <strong>implantação</strong> (pagamento único)</div>
       <ul class="pitems">
         <li>1 Assistente de IA dgenny®</li>
         <li>Até 3.000 conversas iniciadas/ano</li>
@@ -358,13 +361,12 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif}
         <li>Integração SAP Ariba (em avaliação)</li>
         <li>Suporte dedicado contínuo</li>
       </ul>
-      <div class="ptotal">Ano 1 (com implantação): <strong>R$ 50.000</strong></div>
     </div>
     <div class="pc padrao">
       <div class="ptag">Plano Avançado</div>
       <div class="pname">1 assistente por compradora</div>
-      <div class="pprice">R$ 5.000</div>
-      <div class="pperiod">por mês · pacote anual</div>
+      <div class="pprice">R$ 5.000<span class="pmes">/mês</span></div>
+      <div class="pimplant">+ <strong>R$ 8.000</strong> de <strong>implantação</strong> (pagamento único)</div>
       <ul class="pitems">
         <li>2 Assistentes de IA dgenny®</li>
         <li>Até 6.000 conversas iniciadas/ano</li>
@@ -374,7 +376,6 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif}
         <li>Integração SAP Ariba (em avaliação)</li>
         <li>Suporte dedicado contínuo</li>
       </ul>
-      <div class="ptotal">Ano 1 (com implantação): <strong>R$ 68.000</strong></div>
     </div>
   </div>
   <div class="validity-box">Proposta válida até 03/09/2026.</div>
